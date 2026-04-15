@@ -63,6 +63,17 @@ console.log(report.changes);               // [{ zone: 'header/navigation', size
 
 ## CI Example (GitHub Actions)
 
+**Option A: Use [diffgoblin-action](https://github.com/neg-0/diffgoblin-action)** (recommended — zero setup, posts PR comments automatically):
+
+```yaml
+- uses: neg-0/diffgoblin-action@v1
+  with:
+    base-url: 'https://your-site.com'
+    head-url: 'https://preview.your-site.com'
+```
+
+**Option B: Use the CLI directly** (more control):
+
 ```yaml
 name: Visual Regression
 on: [pull_request]
