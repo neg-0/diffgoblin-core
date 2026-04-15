@@ -1,0 +1,40 @@
+{
+  "name": "diffgoblin-core",
+  "version": "0.1.0",
+  "description": "Visual diff engine for websites. Screenshot two URLs, compute pixel-level differences, get a structured change report.",
+  "type": "module",
+  "main": "lib/index.js",
+  "bin": {
+    "diffgoblin": "./bin/diff.js"
+  },
+  "scripts": {
+    "diff": "node bin/diff.js"
+  },
+  "keywords": [
+    "visual-diff",
+    "screenshot",
+    "visual-regression",
+    "website-monitoring",
+    "pixel-diff",
+    "image-comparison",
+    "screenshot-diff",
+    "change-detection",
+    "puppeteer",
+    "ci-cd"
+  ],
+  "author": "ShipGoblin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neg-0/diffgoblin-core"
+  },
+  "homepage": "https://neg-0.github.io/diffgoblin/",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "pixelmatch": "^7.1.0",
+    "pngjs": "^7.0.0",
+    "puppeteer": "^24.40.0"
+  }
+}
